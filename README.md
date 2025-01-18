@@ -80,26 +80,3 @@ Edit
     "memory_usage": 63.2,
     "timestamp": 1737180209.1404
 }
-File Structure
-php
-Copy
-Edit
-distributed-network-monitoring/
-│
-├── collector-service/
-│   ├── app.py                   # Python Flask app for collecting metrics
-│   ├── requirements.txt         # Python dependencies
-│   └── Dockerfile               # Docker configuration
-│
-├── aggregator-service/
-│   ├── src/                     # Spring Boot application source
-│   ├── pom.xml                  # Maven configuration
-│   └── Dockerfile               # Docker configuration
-│
-├── frontend/
-│   ├── src/                     # React application source
-│   ├── public/                  # Public assets
-│   └── Dockerfile               # Docker configuration
-│
-├── docker-compose.yml           # Orchestration of all services
-└── README.md                    # Project documentation
