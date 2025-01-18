@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  collector-service:
+    build: 
+      context: ./collector-service
+    container_name: collector-service
+    ports:
+      - "5001:5001"
+  
+  aggregator-service:
+    build:
+      context: ./aggregator-service
+    container_name: aggregator-service
+    ports:
+      - "8080:8080"
+    depends_on:
+      - collector-service
+  
+  frontend:
+    build:
+      context: ./frontend
+    container_name: frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - aggregator-service
