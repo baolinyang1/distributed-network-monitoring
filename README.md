@@ -80,3 +80,6 @@ Edit
     "memory_usage": 63.2,
     "timestamp": 1737180209.1404
 }
+
+screenshot:
+![Screenshot 2025-01-18 002856](https://github.com/user-attachments/assets/684b3461-be1e-4b1b-803b-928d048aa67d)
